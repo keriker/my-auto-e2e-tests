@@ -4,7 +4,7 @@ exports.config = {
   output: './output',
   helpers: {
     Puppeteer: {
-      url: 'www.sjob-dev.ru',
+      url: 'https://www.sjob-dev.ru',
       show: true,
       chrome: {
         args: ['--ignore-certificate-errors', '--incognito'],

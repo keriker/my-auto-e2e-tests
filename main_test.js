@@ -1,6 +1,7 @@
 const { I } = inject();
+
 Feature('Главная страница');
 
-Scenario('Открытие главной @test', async () => {
+Scenario('Открытие главной @test',  () => {
 I.amOnPage('/');
 });
