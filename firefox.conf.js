@@ -5,7 +5,7 @@ exports.config = {
     output: './output',
     helpers: {
         Puppeteer: {
-            url: 'www.sjob-dev.ru',
+            url: 'https://www.sjob-dev.ru',
             show: true,
             browser: 'firefox',
             firefox: {
