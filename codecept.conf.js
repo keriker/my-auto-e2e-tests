@@ -17,7 +17,11 @@ exports.config = {
   bootstrap: null,
   mocha: {},
   name: 'my-auto-e2e-tests',
-  plugins: {
+    rerun: {
+        minSuccess: 10,
+        maxReruns: 20,
+    },
+    plugins: {
     retryFailedStep: {
       enabled: true
     },
