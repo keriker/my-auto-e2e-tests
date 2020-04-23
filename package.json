@@ -19,9 +19,6 @@
   "homepage": "https://github.com/keriker/my-auto-e2e-tests#readme",
   "devDependencies": {
     "codeceptjs": "^2.5.0",
-    "puppeteer": "^2.1.1"
-  },
-  "dependencies": {
-    "puppeteer-firefox": "^0.5.1"
+    "playwright": "^0.13.0"
   }
 }

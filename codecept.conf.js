@@ -1,25 +1,24 @@
 exports.config = {
-  tests: './*_test.js',
+  tests: './tests/*_test.js',
   show: process.env.HEADLESS === 'true',
   output: './output',
   helpers: {
-    Puppeteer: {
-      url: 'https://www.sjob-dev.ru',
-      show: true,
-      chrome: {
-        args: ['--ignore-certificate-errors', '--incognito'],
-      },
+      Playwright: {
+          browser: process.env.BROWSER || 'chromium',
+          url: `https://www.${process.env.CODECEPT_URL}.ru`,
+          show: process.env.HEADLESS === 'false',
+          restart: true,
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
   },
   bootstrap: null,
   mocha: {},
   name: 'my-auto-e2e-tests',
     rerun: {
         minSuccess: 10,
-        maxReruns: 20,
+        maxReruns: 10,
     },
     plugins: {
     retryFailedStep: {

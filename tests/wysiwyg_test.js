@@ -1,7 +1,7 @@
-const wysiwygPage = require('./pages/wysiwygPage');
+const wysiwygPage = require('../pages/wysiwygPage');
 
 Feature('wysiwyg');
-Scenario('Проверка редактора wysiwyg  @wtf', (I) => {
+Scenario('Проверка редактора wysiwyg', (I) => {
     I.amOnPage ("http://the-internet.herokuapp.com/");
     I.click ("WYSIWYG Editor");
     I.switchTo(wysiwygPage.iframe);
