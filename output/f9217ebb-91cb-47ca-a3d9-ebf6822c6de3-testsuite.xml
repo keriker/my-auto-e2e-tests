@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588783587821' stop='1588783597340'>
+    <name>Чекбоксы:</name>
+    <title>Чекбоксы:</title>
+    <test-cases>
+        <test-case start='1588783587822' status='passed' stop='1588783597104'>
+            <name>Выбор чекбокса</name>
+            <title>Выбор чекбокса</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588783588616' status='passed' stop='1588783596619'>
+                    <name>I am on page "http://the-internet.herokuapp.com/checkboxes"</name>
+                    <title>I am on page "http://the-internet.herokuapp.com/checkboxes"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783596619' status='passed' stop='1588783596646'>
+                    <name>I dont see checkbox is checked {"xpath":"(//input[contains(@type, \"checkbox\")])[1]"}</name>
+                    <title>I dont see checkbox is checked {"xpath":"(//input[contains(@type, \"checkbox\")])[1]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783596647' status='passed' stop='1588783596662'>
+                    <name>I see checkbox is checked {"xpath":"(//input[contains(@type, \"checkbox\")])[2]"}</name>
+                    <title>I see checkbox is checked {"xpath":"(//input[contains(@type, \"checkbox\")])[2]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783596663' status='passed' stop='1588783596863'>
+                    <name>I check option {"xpath":"(//input[contains(@type, \"checkbox\")])[1]"}</name>
+                    <title>I check option {"xpath":"(//input[contains(@type, \"checkbox\")])[1]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783596864' status='passed' stop='1588783596896'>
+                    <name>I see checkbox is checked {"xpath":"(//input[contains(@type, \"checkbox\")])[1]"}</name>
+                    <title>I see checkbox is checked {"xpath":"(//input[contains(@type, \"checkbox\")])[1]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783596897' status='passed' stop='1588783597075'>
+                    <name>I uncheck option {"xpath":"(//input[contains(@type, \"checkbox\")])[2]"}</name>
+                    <title>I uncheck option {"xpath":"(//input[contains(@type, \"checkbox\")])[2]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783597077' status='passed' stop='1588783597104'>
+                    <name>I dont see checkbox is checked {"xpath":"(//input[contains(@type, \"checkbox\")])[2]"}</name>
+                    <title>I dont see checkbox is checked {"xpath":"(//input[contains(@type, \"checkbox\")])[2]"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

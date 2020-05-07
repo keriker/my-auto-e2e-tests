@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588783616625' stop='1588783658050'>
+    <name>Восстановление пароля:</name>
+    <title>Восстановление пароля:</title>
+    <test-cases>
+        <test-case start='1588783616626' status='failed' stop='1588783657849'>
+            <name>Восстановление пароля</name>
+            <title>Восстановление пароля</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588783617406' status='passed' stop='1588783626378'>
+                    <name>I am on page "https://the-internet.herokuapp.com/forgot_password"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/forgot_password"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783626379' status='passed' stop='1588783626789'>
+                    <name>I fill field {"css":"#email"}, "test@mail.ru"</name>
+                    <title>I fill field {"css":"#email"}, "test@mail.ru"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783626790' status='passed' stop='1588783627839'>
+                    <name>I click {"css":"#form_submit"}</name>
+                    <title>I click {"css":"#form_submit"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783627840' status='failed' stop='1588783657849'>
+                    <name>I wait in url "email_sent"</name>
+                    <title>I wait in url "email_sent"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected url to include email_sent, but found https://the-internet.herokuapp.com/email_sent</message>
+                <stack-trace>Error: expected url to include email_sent, but found https://the-internet.herokuapp.com/email_sent
+                    at C:\my-auto-e2e-tests\node_modules\codeceptjs\lib\helper\Playwright.js:1750:15</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

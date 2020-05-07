@@ -1,0 +1,107 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588783597376' stop='1588783616612'>
+    <name>Выпадающий список:</name>
+    <title>Выпадающий список:</title>
+    <test-cases>
+        <test-case start='1588783597379' status='failed' stop='1588783604523'>
+            <name>Выбираем опцию Option 1</name>
+            <title>Выбираем опцию Option 1</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588783598137' status='passed' stop='1588783604375'>
+                    <name>I am on page "https://the-internet.herokuapp.com/dropdown"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/dropdown"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783604375' status='passed' stop='1588783604509'>
+                    <name>I select option "#dropdown", "Option 1"</name>
+                    <title>I select option "#dropdown", "Option 1"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783604509' status='failed' stop='1588783604522'>
+                    <name>I wait for value {"xpath":"//option[@selected]"}, "1"</name>
+                    <title>I wait for value {"xpath":"//option[@selected]"}, "1"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element ({xpath: //option[@selected]}) is not in DOM or there is no element({xpath: //option[@selected]}) with value "1" after 1 sec
+                Evaluation failed: TypeError: $XPath is not a function
+                    at eval (eval at &lt;anonymous> (:3:36), &lt;anonymous>:5:16)
+                    at eval (eval at &lt;anonymous> (:3:36), &lt;anonymous>:6:9)
+                    at __playwright_evaluation_script__:4:58
+                    at onRaf (__playwright_evaluation_script__:333:29)
+                    at Injected._pollRaf (__playwright_evaluation_script__:339:9)
+                    at Injected.poll (__playwright_evaluation_script__:364:25)
+                    at __playwright_evaluation_script__:4:29
+                    at __playwright_evaluation_script__:5:11</message>
+                <stack-trace>Error: element ({xpath: //option[@selected]}) is not in DOM or there is no element({xpath: //option[@selected]}) with value "1" after 1 sec
+                Evaluation failed: TypeError: $XPath is not a function
+                    at eval (eval at &lt;anonymous> (:3:36), &lt;anonymous>:5:16)
+                    at eval (eval at &lt;anonymous> (:3:36), &lt;anonymous>:6:9)
+                    at __playwright_evaluation_script__:4:58
+                    at onRaf (__playwright_evaluation_script__:333:29)
+                    at Injected._pollRaf (__playwright_evaluation_script__:339:9)
+                    at Injected.poll (__playwright_evaluation_script__:364:25)
+                    at __playwright_evaluation_script__:4:29
+                    at __playwright_evaluation_script__:5:11
+                    at C:\my-auto-e2e-tests\node_modules\codeceptjs\lib\helper\Playwright.js:1625:13</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1588783604734' status='failed' stop='1588783616368'>
+            <name>Выбираем опцию Option 2</name>
+            <title>Выбираем опцию Option 2</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588783605458' status='passed' stop='1588783616213'>
+                    <name>I am on page "https://the-internet.herokuapp.com/dropdown"</name>
+                    <title>I am on page "https://the-internet.herokuapp.com/dropdown"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783616213' status='passed' stop='1588783616349'>
+                    <name>I select option "#dropdown", "2"</name>
+                    <title>I select option "#dropdown", "2"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1588783616350' status='failed' stop='1588783616367'>
+                    <name>I wait for text "Option 2", 30, "#dropdown"</name>
+                    <title>I wait for text "Option 2", 30, "#dropdown"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Text "Option 2" was not found on page after 30 sec
+                Evaluation failed: DOMException: Failed to execute 'querySelector' on 'Document': '[object Object]' is not a valid selector.
+                    at eval (eval at &lt;anonymous> (:3:36), &lt;anonymous>:4:31)
+                    at eval (eval at &lt;anonymous> (:3:36), &lt;anonymous>:7:11)
+                    at __playwright_evaluation_script__:4:58
+                    at onRaf (__playwright_evaluation_script__:333:29)
+                    at Injected._pollRaf (__playwright_evaluation_script__:339:9)
+                    at Injected.poll (__playwright_evaluation_script__:364:25)
+                    at __playwright_evaluation_script__:4:29
+                    at __playwright_evaluation_script__:5:11</message>
+                <stack-trace>Error: Text "Option 2" was not found on page after 30 sec
+                Evaluation failed: DOMException: Failed to execute 'querySelector' on 'Document': '[object Object]' is not a valid selector.
+                    at eval (eval at &lt;anonymous> (:3:36), &lt;anonymous>:4:31)
+                    at eval (eval at &lt;anonymous> (:3:36), &lt;anonymous>:7:11)
+                    at __playwright_evaluation_script__:4:58
+                    at onRaf (__playwright_evaluation_script__:333:29)
+                    at Injected._pollRaf (__playwright_evaluation_script__:339:9)
+                    at Injected.poll (__playwright_evaluation_script__:364:25)
+                    at __playwright_evaluation_script__:4:29
+                    at __playwright_evaluation_script__:5:11
+                    at C:\my-auto-e2e-tests\node_modules\codeceptjs\lib\helper\Playwright.js:1813:13</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
