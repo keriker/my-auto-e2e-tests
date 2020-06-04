@@ -11,6 +11,9 @@ class Myplaywright extends Helper {
    * @protected
    */
   _before() {
+      this.err = null;
+      this.helpers.Playwright.page.on("pageerror", (e) => this.err = e);
+
 
   }
 
@@ -18,9 +21,8 @@ class Myplaywright extends Helper {
    * @protected
    */
   _after() {
-      page().on("pageerror", function(err) {
-          console.log(`Page error:  ${err}`);
-      });
+      if (this.err) throw new Error(`Browser JS error ${this.err}`);
+
   }
 
     async goBack(){

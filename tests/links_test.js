@@ -14,8 +14,7 @@ Scenario('Переходы по ссылкам',  async() => {
     I.waitForVisible(linkPage.header.fileUploader);
 });
 
-Scenario('Ошибка @test',  async() => {
+Scenario('Ошибка на странице',  async() => {
     I.amOnPage('https://the-internet.herokuapp.com/javascript_error');
-
 });
 
