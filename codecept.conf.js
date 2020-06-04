@@ -8,7 +8,10 @@ exports.config = {
           url: `https://www.${process.env.CODECEPT_URL}.ru`,
           show: process.env.HEADLESS === 'false',
           restart: true,
-    }
+    },
+      MyPlaywright: {
+          require: './myplaywright_helper.js',
+      },
   },
   include: {
     I: './steps_file.js',
