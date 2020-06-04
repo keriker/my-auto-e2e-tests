@@ -14,6 +14,12 @@ env:
   FORCE_COLOR: 1
 
   jobs:
+    build:
+      name: 'Chromium, firefox, webkit'
+      runs-on: ubuntu-18.04
+      strategy:
+        matrix:
+          node-version: [12.x]
     e2e-tests:
       runs-on: ubuntu-latest # or macos-latest, windows-latest
 
