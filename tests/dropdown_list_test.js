@@ -11,5 +11,5 @@ Scenario('Выбираем опцию Option 1',  () => {
 Scenario('Выбираем опцию Option 2',  () => {
     I.amOnPage('https://the-internet.herokuapp.com/dropdown');
     I.selectOption('#dropdown', '2' );
-    I.waitForText('Option 2', 30, { xpath: '//option[@selected]' })
+    I.seeTextEquals('Option 2', '//option[@selected]');
 });
