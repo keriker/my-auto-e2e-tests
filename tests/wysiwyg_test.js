@@ -1,6 +1,7 @@
 const wysiwygPage = require('../pages/wysiwygPage');
 
 Feature('wysiwyg');
+// TODO: Пофиксить тест
 xScenario('Проверка редактора wysiwyg', (I) => {
     I.amOnPage ("http://the-internet.herokuapp.com/");
     I.click ("WYSIWYG Editor");
